@@ -13,6 +13,12 @@ dotnet dev-certs https --trust
 ```
 
 ## Start the example TodoApi
+Change into the Project Directory
+```
+cd TodoApi
+```
+
+Start the App
 ```
 dotnet run --launch-profile https
 ```
