@@ -1,2 +1,31 @@
-/**/obj/
-/**/bin/
+# Ignore .NET build directories
+**/obj/
+**/bin/
+
+# Ignore Angular build directories and dependencies
+node_modules/
+dist/
+
+# Ignore environment configuration files
+*.env
+
+# Ignore log files
+*.log
+
+# Ignore JetBrains Rider specific files and directories
+.idea/
+*.suo
+*.user
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/libraries
+.idea/.name
+.idea/modules.xml
+.idea/vcs.xml
+.idea/.idea/*
+.idea/httpRequests/*
+
+# Additional IDEs and editors
+.vscode/
+*.orig

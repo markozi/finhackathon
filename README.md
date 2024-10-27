@@ -7,7 +7,7 @@ If you already have VS Code and Docker installed, you can click the badge above 
 After opening this code repository in a dev container, follow the instruction below.
 
 ## Create and trust the developer certificate
-inside the dev container terminal enter the following to create a local dev certificate and trust it.
+inside the dev container terminal, enter the following to create a local dev certificate and trust it.
 ```
 dotnet dev-certs https --trust
 ```
