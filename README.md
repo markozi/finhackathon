@@ -29,3 +29,11 @@ Open the following links in a browser to test the web app.
 
 Note that you might need to change the port depending on the output of dotnet run. According to https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-8.0&tabs=visual-studio-code it is random.
 
+# Setting up Rider Dev Containers
+## Windows
+1. Set windows service "OpenSSH Authentication Agent" to startup type "Automatic" and start it
+2. Update Rider to the newest version
+3. Start Rider
+4. On the left side choose "Remote Development - Dev Containers - New Dev Container"
+5. Choose "From VCS Project", "Docker", "Rider", "https://github.com/markozi/finhackathon", Automatic and click "Build Container and Continue"
+6. Connect to the container and voilà
