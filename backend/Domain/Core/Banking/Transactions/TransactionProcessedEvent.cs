@@ -1,5 +1,5 @@
-using FinHack.Common.Knowledge;
-using FinHack.Common.Model;
+using Common.Domain.Knowledge;
+using Common.Domain.Model;
 using FinHack.Core.Banking.Accounting;
 
 namespace FinHack.Core.Banking.Transactions;

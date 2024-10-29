@@ -1,4 +1,4 @@
-namespace FinHack.Common.Knowledge;
+namespace Common.Domain.Knowledge;
 
 public class Currency(string name)
 {

@@ -1,4 +1,4 @@
-using FinHack.Common.Knowledge;
+using Common.Domain.Knowledge;
 using FinHack.Core.Banking.Accounting;
 
 namespace FinHack.Core.Banking.Transactions.Payments;

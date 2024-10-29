@@ -1,5 +1,4 @@
-using FinHack.Common.Knowledge;
-using FinHack.Common.Model;
+using Common.Domain.Knowledge;
 using FinHack.Core.Banking.Accounting;
 using FluentAssertions;
 

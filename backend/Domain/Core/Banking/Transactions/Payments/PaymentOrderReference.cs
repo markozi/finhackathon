@@ -1,4 +1,4 @@
-using FinHack.Common.Model;
+using Common.Domain.Model;
 
 namespace FinHack.Core.Banking.Transactions.Payments;
 

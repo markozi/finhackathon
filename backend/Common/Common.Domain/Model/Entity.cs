@@ -1,4 +1,4 @@
-namespace FinHack.Common.Model;
+namespace Common.Domain.Model;
 
 public abstract class Entity
 {
