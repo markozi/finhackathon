@@ -29,3 +29,6 @@ dist/
 # Additional IDEs and editors
 .vscode/
 *.orig
+
+# MAS OS
+.DS_Store
