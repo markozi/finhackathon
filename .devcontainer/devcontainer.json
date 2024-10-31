@@ -13,7 +13,8 @@
 	},
 	"extensions": [
 		"JetBrains.rider"  // Rider-Extension für Dev Containers
-	]
+	],
+	"remoteUser": "vscode"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
