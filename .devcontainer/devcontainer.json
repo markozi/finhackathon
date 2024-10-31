@@ -4,7 +4,9 @@
 	"name": "C# (.NET) and PostgreSQL",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
-	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"appPort": [5005],  // Port für den Debugger
+  	"forwardPorts": [5005]  // Gibt den Debug-Port an
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
