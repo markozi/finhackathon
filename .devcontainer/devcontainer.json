@@ -6,7 +6,14 @@
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	"appPort": [5005],  // Port für den Debugger
-  	"forwardPorts": [5005]  // Gibt den Debug-Port an
+  	"forwardPorts": [5005],  // Gibt den Debug-Port an
+	"settings": {
+    		"remote.autoForwardPorts": true,
+    		"rider.remoteDebugger.autoAttach": true  // Ermöglicht die automatische Anbindung des Debuggers
+	},
+	"extensions": [
+		"JetBrains.rider"  // Rider-Extension für Dev Containers
+	]
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
