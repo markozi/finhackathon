@@ -1,23 +1,11 @@
 namespace Common.Domain.Model;
 
-public abstract class Aggregate : Entity
+public abstract class Aggregate(Guid id, int version = 0) : Entity
 {
-    private readonly List<DomainEvent> _uncommittedEvents = new List<DomainEvent>();
+    private readonly List<DomainEvent> _uncommittedEvents = [];
 
-    protected Aggregate(Guid id)
-    {
-        Id = id;
-        Version = 0;
-    }
-    
-    protected Aggregate(Guid id, int version)
-    {
-        Id = id;
-        Version = version;
-    }
-
-    public Guid Id { get; }
-    public int Version { get; private set; }
+    public Guid Id { get; } = id;
+    public int Version { get; private set; } = version;
 
     public IEnumerable<DomainEvent> DomainEvents => _uncommittedEvents;
 
@@ -39,7 +27,7 @@ public abstract class Aggregate : Entity
     private void ApplyEvent(DomainEvent domainEvent, bool isFromHistory)
     {
         ApplyEvent(domainEvent);
-
+        
         if (!isFromHistory)
         {
             _uncommittedEvents.Add(domainEvent);
